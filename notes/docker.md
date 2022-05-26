@@ -69,7 +69,7 @@
 - ``` docker-compose down ```
 - ``` docker-compose ps ```
 
-### Docker columes
+### Docker volumes
 ---
 
 - When we create an image, then to do some modify to the code, container will not make corresponding change unless we rebuild the image. In dev (not for prod!), we can use docker volumes to sync the code and container.
@@ -77,3 +77,11 @@
 - ```
   docker run -p 8080:8080 -v /project -v $(pwd):/app <image_id / image_name>
   ```
+- ### volumes are not usually used in prod.
+
+## Production level workflow
+---
+
+- Dockerfile: defines image that how the containers will look like.
+- docker-compose.yml: defines how many containers will be created and what purpose for each container.
+- docker attach: Use docker attach to attach your terminal's standard input, output, and error (or any combination of the three) to a running container using the container's ID or name. This allows you to view its ongoing output or to control it interactively, as though the commands were running directly in your terminal.
