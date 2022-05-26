@@ -74,3 +74,6 @@
 
 - <img src="https://raw.githubusercontent.com/liulanze/cs-notes/main/notes/pics/k8s7.png">
 - In k8s, object is deployed by controller through writing config file.
+
+
+Reference: https://www.udemy.com/certificate/UC-730cb976-ae30-464c-9275-d9d8bf16a47d/

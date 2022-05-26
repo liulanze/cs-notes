@@ -85,3 +85,5 @@
 - Dockerfile: defines image that how the containers will look like.
 - docker-compose.yml: defines how many containers will be created and what purpose for each container.
 - docker attach: Use docker attach to attach your terminal's standard input, output, and error (or any combination of the three) to a running container using the container's ID or name. This allows you to view its ongoing output or to control it interactively, as though the commands were running directly in your terminal.
+
+Reference: https://www.udemy.com/certificate/UC-730cb976-ae30-464c-9275-d9d8bf16a47d/
