@@ -17,12 +17,12 @@
 15. Alan Turing
 16. Software Engineering
 17. Integrated Circuit & Moore's Law
-18. Operating Systems
+18. [Operating Systems](#operating-systems)
 19. Memory & Storage
-20. Files & File Systems
+20. [Files & File Systems](#files--file-systems)
 21. Compression
 22. Keyboards & Command Line Interface
-23. Screens & 2D Graphics
+23. [Screens & 2D Graphics](#screens--2d-graphics)
 24. The Cold War and Consumerism
 25. The Personal Computer Revolution
 26. Graphical User Interfaces - GUI
@@ -84,6 +84,54 @@
 - The core in CPU means multiple parts that can do `fetch-decode-exec` at the same time. Core can be treated as a single CPU, but they are connected with each other as well, sharing resources like CPU cache.
 - One core can have two threads.
 - For Big Tech, services like searching, video services will require tons of CPUs - Super Computer.
+- Transister is made by Photolithography technology, and each chip contains billions of transistors.
+- For Apple's M chip, it integrated CPU, GPU and memory, because of that, the data transfer delay has been detracted significantly. Therefore, for sure their memory / GPU are Apple brand as well.
 
 ## Early Programming
+- Compiler is a software. Every language has its own compiler.
+- The reason why C/C++/Go is so fast is that the compiler of them can directly transform the code into machine code (well, there is assembly language transform process between language code and machine code process for sure). However, languages like Java/Python need extra steps to generate machine code like interpreted language.
+- Captcha
+- Integrated circuits (ICs)
+- Motherboard (PCB) is not a IC, but components / devices on the motherboard can be ICs.
+- The circuit on the motherboard can be made by copper if they only transfer electronic bit. Otherwise if it needs calculation like check statement on 0/1, they need to be made by silicon.
+- PCB material works with ICs to be powerful.
+- Chips can be existed in many devices, like CPU/GPU/memory/disk. Chip is made by silicon, used for solve data, execute program, manage connection, etc.
 
+## Operating Systems
+- BIOS (Basic Input / Output System) / UEFI (Unified Extensible Firmware Interface) are pre-installed on the motherboard as firmware. Those firmwares are storaged in a certain type of a chip, usually a non-volatile storage device like ROM, EPROM, or Flash.
+    1. When boot the machine, BIOS / UEFI are the softwares which be executed firstly, their responsibility is to check system health (POST - Power on self test), initialize and test computer hardware, to make sure every hardware is ready. Yeah I found this feature when assumbling my own PC.
+    2. Then bootloader, BIOS / UEFI are responsible to load OS from connected hard ware storage device (SSD, HDD, or CD). Usually `grub.cfg` under boot partition.
+    3. Provide interaction between OS and hardware.
+    4. Provide support on hardware setup.
+- OS has two features:
+    - System needs -> Kernel
+    - Dev needs -> /pkg/bins
+- In the history, because Kernel is so small, that public popular people can use it on a cheaper machine. When Kernel faces issue, back in the long history it will keep printing `Kernel Panic` without anymore logs..
+
+## Files & File Systems
+- Each file on the hard drive is saved continuous and close.
+- Directory file can save the location (where start and where end) along with file size of each file.
+- When file gets modified, its information from the directory file will also be updated.
+- Filesystem separate the disk into same size blocks.
+- For each file, it can take multiple blocks, also, block it takes can be not saved fully.
+- When some files get deletd, on the disk, it won't be wipped, instead, its directory file will update the info saying these blocks are free again! When new data overwrite into these old data, data overwrited finally.
+- This "filesystem block" idea has also be used in memory tech, called virtual memory. It makes program thought they are used on a consistent available memory, but in real, the physical memory has been devided into many memory fragmentations.
+
+## Screens & 2D Graphics
+- Video can save its pixel, and it can detect where the pixel not change often to only save one time for all. While, for where pixel changes often:
+    - Save the change
+    - Or use the pixels stored in the previous frame to create animations and patches. For example, after a hand is saved, you only need to save its motion coordinates to create an animation. ("The hand here is actually the hand in the past").
+    - If you have ever experienced that the video frames are garbled when you are watching it, it means that the video uses patch technology to store pixels, and the patches are messed up.
+- For 3A games, instead of saving pixel, saving motion coordinates can save more spaces (VRAM, general memory).
+- Apple pencil uses tech to record its motion coordinates.
+- VRAM - Video RAM.
+
+## Computer Networks
+- hop counts the number of routers when machine A goes to machine B.
+- hop limit
+- To avoid transfer too large data at once, data will be devided into coupel packets. Each packet is transferred by routers, and packet contains info for destination, for example, the format is decided by IP protocol.
+- The packets of a same file can use different routers to reach the destination. TCP/IP can solve packets misorder issue.
+- When device wants to connect to net. It firstly connect LAN to family LAN (local area network), then router in family can connect to a WAN (wide area network) from community. And an even larger WAN can be connected by community to maybe a city. Eventually to the end maybe countrywide.
+- WLAN - wireless local area network. WiFi.
+- IP gets the packets to the right computer, while UDP gets the packets to the right program running on that computer.
+- 
