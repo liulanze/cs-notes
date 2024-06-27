@@ -27,14 +27,14 @@
 25. The Personal Computer Revolution
 26. Graphical User Interfaces - GUI
 27. 3D Graphics
-28. Computer Networks
+28. [Computer Networks](#computer-networks)
 29. The Internet
 30. The World Wide Web
-31. Cybersecurity
+31. [Cybersecurity](#cybersecurity)
 32. Hacker & Cyber Attacks
 33. Cryptography
 34. Machine Learning & Artificial Intelligence
-35. Computer Vision
+35. [Computer Vision](#computer-vision)
 36. Natural Language Processing
 37. Robots
 38. Psychology of Computing
@@ -134,4 +134,27 @@
 - When device wants to connect to net. It firstly connect LAN to family LAN (local area network), then router in family can connect to a WAN (wide area network) from community. And an even larger WAN can be connected by community to maybe a city. Eventually to the end maybe countrywide.
 - WLAN - wireless local area network. WiFi.
 - IP gets the packets to the right computer, while UDP gets the packets to the right program running on that computer.
-- 
+- With UDP, there will be no shake, so after sending the packets, you won't know whether the packets have been arrived or not, so when networks is bad, you will see video stuck because some of the packets have not arrived.
+- Also, nowadays, mostly developers just use TCP/IP, not UDP, because (1) TCP header contains dequence number, when arrived, it can sort. (2) TCP/IP packets when arrive, it can tell back to the sender that arrived (ACK).
+- However, UDP still useful, when you need high speed stream, like live video, CSGO, which are time sensitive, that you may use UDP as protocol.
+- Because there are tons of domain names, so domain name / ip addresses are saved using tree. Actually, in the real world, big data will save by tree mostly. I feel because tree can search fast and sort fast, also, you can insert or delete nodes easily.
+- www != internet, internet includes www (a software under the hood), Ins, WOW, Wechat...
+- Request web uses HTTP methods.
+
+## Cybersecurity
+- malware
+- trojan horses pretend a good software, but actually a malware.
+- exploit
+- botnet -> thoes are machines that be hacked by hacker, used for sending spams, mining bitcoin, or attacking.
+- cyber warfare
+- cryptography - use cipher algorithm to convert plain text to cipher text.
+- encryption <=> decryption
+- AES encryption
+- Symmetric encryption is like you and me painting, the bottom color A is the public key, and I paint a color B on this bottom color A, and you also paint another color C on the bottom color A, then we switch board, I add my color B on your (A + C), same you add your C on my (A + B), we will finally get the same (A + B + C).
+- Asymmetric encryption is like I have a box with a private key, I leave the box open and give it to you, you put some contents in it, and close the box and return it back to me. I can use my private key to open the box seeing the content.
+
+## Computer Vision
+- frame number
+- AI should thank game, which requires high performance of GPU which encourage the GPU to improve year by year, which creates today's AI.
+- Computer Vision (CV) - resolve pixel, leverage Kernel to solve pixel, convolution.
+- Convolution Neural Network - CNN
