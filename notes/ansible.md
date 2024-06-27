@@ -1,6 +1,8 @@
 # Ansible
 - What is Ansible (YAML)?
-  - A tool to automate IT tasks, which can reduce the tedious operation like manually ssh to many hosts to do the same setup or tasks, instead, use one yaml file to achieve by the control machine.
+  - A tool to automate IT tasks, which can reduce the tedious operation like
+    manually ssh to many hosts to do the same setup or tasks, instead, use one
+    yaml file to achieve by the control machine.
 - What Ansible can do:
   - Execute tasks from your own machine.
   - Configuration / installation / deployment steps in a single yaml file.
@@ -26,4 +28,5 @@
     - which tasks
     - which hosts
     - which users
-- Playbook (yaml file) includes 1 or more plays. play is somwhow similar to the task.
+- Playbook (yaml file) includes 1 or more plays. play is somwhow similar to the
+  task.

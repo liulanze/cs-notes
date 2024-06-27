@@ -8,7 +8,8 @@
         - Select External
         - Click create Virtual Switch
             - Name it External
-            - Make sure the `External Network`: drop down has your ethernet card selected.
+            - Make sure the `External Network`: drop down has your ethernet card
+              selected.
     - Create a build machine VM
         - Gen 2
         - 16GB+ Memory
@@ -16,7 +17,9 @@
         - Network adapter set to `External`
         - Attach the Linux iso and start the VM
     - Set the processor number to 8+
-    - Open the administrator PowerShell window and run `Set-VMProcessor -VMName <name-assigned-to-vm> -ExposeVirtualizationExtensions $true` (empower VM launched in the VM).
+    - Open the administrator PowerShell window and run `Set-VMProcessor -VMName
+      <name-assigned-to-vm> -ExposeVirtualizationExtensions $true` (empower VM
+      launched in the VM).
 3. Start the VM, install the Linux OS following the direction.
 4. Open VM's terminal
     - `sudo dnf check-update`
