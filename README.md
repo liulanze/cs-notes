@@ -6,3 +6,4 @@
 - [Packer](https://github.com/liulanze/cs-notes/blob/main/notes/packer.md)
 - [MIT Missing Semester](https://github.com/liulanze/mit-missing-semester)
 - [Crash Course Computer Science (Introduction to Computers)](https://github.com/liulanze/cs-notes/blob/main/notes/crash-course-cs.md)
+- [Linux Hyper-V Setup](https://github.com/liulanze/cs-notes/blob/main/notes/linux-hyper-v-setup.md)
