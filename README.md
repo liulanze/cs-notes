@@ -9,3 +9,5 @@
   Computers)](https://github.com/liulanze/cs-notes/blob/main/notes/crash-course-cs.md)
 - [Linux Hyper-V
   Setup](https://github.com/liulanze/cs-notes/blob/main/notes/linux-hyper-v-setup.md)
+- [Building Triton Inference Server on Azure
+  Linux](https://github.com/liulanze/cs-notes/blob/main/notes/tritonserver.md)
