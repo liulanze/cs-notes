@@ -12,3 +12,4 @@
 - [Building Triton Inference Server on Azure
   Linux](https://github.com/liulanze/cs-notes/blob/main/notes/tritonserver.md)
 - [ElasticSearch](https://github.com/liulanze/cs-notes/blob/main/notes/elasticsearch.md)
+- [Kafka](https://github.com/liulanze/cs-notes/blob/main/notes/kafka.md)
