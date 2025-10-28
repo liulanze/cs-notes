@@ -59,6 +59,10 @@ What does the Decode phase actually do?
 
 也就是说，只有新 token 的 Q 会变化（因为它是新生成的 token 才需要发起查询），而之前的 token 的 Q/K/V 都保持不变。
 
-### 5
+### 5 general tokenization / detokenization
 
 Tokenization / detokenization happens on CPU usually, no matmul or parallel computing.
+
+### 6 BPE tokenizer
+
+Byte Pair Encoding, from single char, merge chars, find the high frequent occured combination, make them new word, assign them token index, finally put these "new word" back and continue the training loop, keep iterating this loop to generate the BPE vocabulary.
