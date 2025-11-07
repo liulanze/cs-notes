@@ -19,6 +19,7 @@ When there are no tasks, SMs remain idle. When a task starts, blocks are assigne
 Between blocks and threads, there is an intermediate level called **warps**:
 - A block can include many warps
 - A warp contains a fixed 32 threads
+- the reason to have warp is to control, there are many threads in one block, can not ask SM level to control that many amount of threads, so look down to a level - warp - to help to control threads.
 
 **Important**: Data communication between different blocks must go through global memory.
 
